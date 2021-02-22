@@ -11,11 +11,11 @@
     "http-proxy-middleware": "^1.0.0",
     "styled-components": "^5.2.1",
     "react-snap": "^1.23.0",
-    "@percy/script": "^1.1.0",
-    "http-server": "^0.12.3"
+    "nock": "^13.0.6",
+    "@testing-library/react": "^11.2.4"
   },
   "scripts": {
-    "start": "npm run production",
+    "start": "npm run test",
     "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
     "production": "npm run build && NODE_ENV=production npm run server",
     "server": "node server/server.js",
@@ -23,8 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap",
-    "percy": "percy exec -- node percy.js"
+    "postbuild": "react-snap"
   },
   "engines": {
     "node": "10.x"
