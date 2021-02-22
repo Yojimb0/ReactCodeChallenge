@@ -1,0 +1,19 @@
+.App{
+  
+}
+
+.App header {
+  background: url('https://cdn.glitch.com/1c5ff4b7-4717-4c22-9baf-c344d613f454%2FScreen%20Shot%202021-02-21%20at%209.15.20%20pm%20(1).webp?v=1613909251423') center center;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: calc(600 / 3000 * 100vw);
+}
+
+.App main{
+  padding: 30px;
+  max-width:500px;
+  margin:auto;
+}
