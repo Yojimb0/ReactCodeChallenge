@@ -12,7 +12,8 @@
     "styled-components": "^5.2.1",
     "react-snap": "^1.23.0",
     "nock": "^13.0.6",
-    "@testing-library/react": "^11.2.4"
+    "@testing-library/react": "^11.2.4",
+    "jest-environment-jsdom-sixteen": "^1.0.3"
   },
   "scripts": {
     "start": "npm run test",
@@ -21,7 +22,7 @@
     "server": "node server/server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "eject": "react-scripts eject",
     "postbuild": "react-snap"
   },
