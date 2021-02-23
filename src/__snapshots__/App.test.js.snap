@@ -24,7 +24,9 @@ exports[`App renders App component 1`] = `
         <dt>
           Total number of votes
         </dt>
-        <dd>
+        <dd
+          data-testid="totalVotes"
+        >
           0
         </dd>
       </dl>

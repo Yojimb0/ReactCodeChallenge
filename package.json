@@ -16,7 +16,7 @@
     "jest-environment-jsdom-sixteen": "^1.0.3"
   },
   "scripts": {
-    "start": "npm run test",
+    "start": "npm run production",
     "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
     "production": "npm run build && NODE_ENV=production npm run server",
     "server": "node server/server.js",

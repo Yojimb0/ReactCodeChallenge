@@ -3,17 +3,19 @@ const path = require("path");
 
 const app = express();
 
-// PWAs want HTTPS!
-function checkHttps(request, response, next) {
-  // Check the protocol — if http, redirect to https.
-  if (request.get("X-Forwarded-Proto").indexOf("https") != -1) {
-    return next();
-  } else {
-    response.redirect("https://" + request.hostname + request.url);
-  }
-}
+// // PWAs want HTTPS!
+// function checkHttps(request, response, next) {
+//   // Check the protocol — if http, redirect to https.
+//   console.log('---request---'); 
+//   console.log(request);
+//   if (request.get("X-Forwarded-Proto").indexOf("https") != -1) {
+//     return next();
+//   } else {
+//     response.redirect("https://" + request.hostname + request.url);
+//   }
+// }
 
-app.all("*", checkHttps);
+// app.all("*", checkHttps);
 
 // A test route to make sure the server is up.
 app.get("/api/ping", (request, response) => {

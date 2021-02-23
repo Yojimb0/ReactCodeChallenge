@@ -12,6 +12,18 @@ Do the test in React. You may want to use create-react-app to bootstrap a new pr
 Show us your best practices. Write the code you proud of. For bonus points, make a few unit tests. We recommend react-testing-library. If you are new to it, start here and here.
 
 ---
+# Considerations
+
+* I decided to use the Glitch platform for the ease of use, and to get the static hosting which I assumed would be easier for you to browse and review. I've used a create-react-app glitch template (I kept its original readme below). I kept the provided server as-is, as this was not the focus of the exercise.
+* I originally started coding this app with a `Class-Components` approach. Discussing with a friend got me to realise that functional components is the ongoing trend. You can find this early implentation here: https://glitch.com/edit/#!/lava-trite-act - Moving to functional component was more confortable for me, and got me to learn more about hooks.
+* I've experimented with `react-snap`, to improve LightHouse score with a pre-rendered static version. It's not perfect, as a re-hydration flash happens, but gets me to 100 performance score.
+* I also wanted to get a feel of `styled-components` although I believe it's a bit overkill in that situation.
+* I'm not very familiar with testing in a React world, but I decided to spend a bit more time, and fill some knowledge gaps. It's not very user-friendly to run it within Glitch, so I would recommend to clone the repo. I've added Nock to cleanly mock API calls.
+
+All in all, I'm happy with the result, and am grateful for this exercise and for the opportunity to get out of my comfort zone.
+
+
+---
 
 # Original Glitch-CRA Readme
 

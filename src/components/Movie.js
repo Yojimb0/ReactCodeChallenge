@@ -12,16 +12,16 @@ import heart from '../icons/heart.svg';
 export const MovieComponent = (props) => {
   
   return(
-    <Movie>
+    <Movie role="listitem">
       <MovieMeta>
-        <Title>{props.title}</Title>
+        <Title data-testid={'title#'+props.testId}>{props.title}</Title>
         <ReleaseDate datetime={props.releaseDate}>
           {new Date(props.releaseDate).toLocaleDateString(undefined, { month: 'long',day: '2-digit', year: 'numeric' })}
         </ReleaseDate>
       </MovieMeta>
       <MovieVotes>
-        <VoteCount>{props.votes} votes</VoteCount>
-        <VoteButton onClick={() => props.voteHandler(props.episodeId)}>
+        <VoteCount data-testid={'votes#'+props.testId}>{props.votes} votes</VoteCount>
+        <VoteButton data-testid={'button#'+props.testId} onClick={() => props.voteHandler(props.episodeId)}>
           <img src={heart} className="App-vote" alt="heart" width="20" height="20"/>
         </VoteButton>
       </MovieVotes>
